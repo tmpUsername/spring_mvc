@@ -15,4 +15,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class GenreController {
     
+    public String lister(){
+        return "genre_lister.jsp";
+    }
 }
