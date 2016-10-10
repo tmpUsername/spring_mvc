@@ -4,6 +4,7 @@
     Author     : admin
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,5 +14,12 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <ul>
+            <c:forEach items="${genres}" var="genre">
+                <li>
+                    <p>${genre.nom}</p>
+                </li>
+            </c:forEach>
+        </ul>
     </body>
 </html>
