@@ -6,6 +6,8 @@
 package streaming.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 
 /**
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class GenreController {
     
+    @RequestMapping(value = "/lister_genres", method = RequestMethod.GET)
     public String lister(){
         return "genre_lister.jsp";
     }
