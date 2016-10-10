@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class GenreController {
     
-    @RequestMapping(value = "/lister_genres", method = RequestMethod.GET)
+    @RequestMapping(value = "/liste_genres", method = RequestMethod.GET)
     public String lister(){
         return "genre_lister.jsp";
     }
