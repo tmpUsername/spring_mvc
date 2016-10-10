@@ -13,13 +13,19 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <c:import url="../../_MENU.jsp"/>
         <h1>Hello World!</h1>
         <ul>
             <c:forEach items="${genres}" var="genre">
                 <li>
-                    <p>${genre.nom}</p>
+                    <p>
+                        ${genre.nom} 
+                        <a href="supprimer_genre/${genre.id}">supprimer</a>
+                        <a href="modifier_genre/${genre.id}">modifier</a>
+                    </p>
                 </li>
             </c:forEach>
         </ul>
+        <a href="ajouter_genre">Ajouter genre</a>
     </body>
 </html>
