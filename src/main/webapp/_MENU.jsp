@@ -9,4 +9,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
     
 <a href="<spring:url value="/"/>">Home</a>
+<a href="<spring:url value="/liste_films"/>">films</a>
 <a href="<spring:url value="/liste_genres"/>" >genres</a>
